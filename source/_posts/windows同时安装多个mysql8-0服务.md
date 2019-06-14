@@ -111,3 +111,13 @@ table_open_cache = 256
 ![](b10.png)
 
 **这个方法可以在一台电脑上安装N个mysql服务，注意修改不同的端口号即可。**
+
+## 后记：
+在一次安装时，新建完my.ini文件执行时。出现了一下的这个错误：
+
+```
+error: Found option without preceding group in config file: D:\mysql-5.6.24-win32\my.ini at line: 1  
+Fatal error in defaults handling. Program aborted
+```
+
+查询后发现是文件的编码问题，从utf-8改为ANSI后就可以了。
