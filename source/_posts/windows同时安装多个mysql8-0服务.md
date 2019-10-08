@@ -121,3 +121,40 @@ Fatal error in defaults handling. Program aborted
 ```
 
 查询后发现是文件的编码问题，从utf-8改为ANSI后就可以了。
+
+## 9月更新
+发现这个博客应该配合**配置mysql远程访问**一起使用会比较好。加入后续步骤
+
+### 更改root用户访问ip限制
+首先要进入你想要更改的mysql：
+```sql
+mysql -u root -p --protocol=tcp --host=localhost --port=3308（选择端口）
+```
+
+然后查询和修改
+```sql
+use mysql;
+```
+```sql
+select host, user, authentication_string, plugin from user; 
+```
+可以看到现在的root用户的host是localhost
+```sql
+update user set host = '%' where user = 'root';
+```
+修改后需要刷新一下权限
+```sql
+flush privileges;
+```
+然后开启全部访问权限
+```sql
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+```
+再次刷新
+```sql
+flush privileges;
+```
+
+完成以上步骤后就可以从本机中测试连接服务器的mysql了。
+
+如果还是连接失败的话，记得开启服务器防火墙上的入站规则中的端口3306和3308（我自己配置的mysql端口就是这两个）
