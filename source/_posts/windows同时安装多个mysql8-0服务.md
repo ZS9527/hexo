@@ -91,7 +91,14 @@ table_open_cache = 256
     net start MySQL3
 ```
 这里的服务名字和上面的命令中起的服务名一致
+
 ![](b6.png)
+
+### 删除服务
+```
+sc delete MySQL3（服务名称）
+```
+为了防止出现一不小心把命令行关闭了，而且还没记录密码，需要重新开始的情况。在此记录一下删除命令
 ## 以root身份进入mysql。
 ```
     mysql -u root -p --protocol=tcp --host=localhost --port=3308（选择端口）

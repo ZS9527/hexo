@@ -82,5 +82,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:ZS9527/ZS9527.github.io.git
+  repository: https://github.com/ZS9527/ZS9527.github.io.git
   branch: master

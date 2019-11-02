@@ -7,6 +7,8 @@ tags: mysql
 # mysql配置主从复制
 > 本文来自[https://www.cnblogs.com/gl-developer/p/6170423.html](https://www.cnblogs.com/gl-developer/p/6170423.html), 仅仅为了下次使用做一个备份。
 
+<!--more-->
+
 ## 配置过程
 - 主服务器：
 	- 开启二进制日志
