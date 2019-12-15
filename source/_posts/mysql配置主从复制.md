@@ -37,6 +37,7 @@ binlog-do-db = game
 ```
 **2.**重启mysql，创建用于同步的用户账号
 打开mysql命令行
+
 ```sql
  mysql -u root -p --protocol=tcp --host=localhost --port=3308（选择端口）
  use mysql;
@@ -45,6 +46,7 @@ binlog-do-db = game
  flush privileges;   #刷新权限
 ```
 **3.**查看master状态，记录二进制文件名(mysql-bin.000003)和位置(73)：
+
 ```
 SHOW MASTER STATUS;
 +------------------+----------+--------------+------------------+
@@ -56,19 +58,23 @@ SHOW MASTER STATUS;
 ### 二丶从服务器slave修改：
 **1.**修改mysql配置
 同样找到my.cnf配置文件，添加server-id
+
 ```xml
 server-id=2 #设置server-id，必须唯一
 ```
-**2.**重启mysql，打开mysql会话，执行同步SQL语句(需要主服务器主机名，登陆凭据，二进制文件的名称和位置)：
+**2.**重启mysql，打开mysql会话，执行同步SQL语句(需要主服务器主机名，登陆凭据，二进制文件的名称和位置。其中的端口号是主库)：
+
 ```sql
 mysql> CHANGE MASTER TO
     ->     MASTER_HOST='182.92.172.80',
-    ->     MASTER_USER='rep1',
+    ->     MASTER_USER='repl',
+    ->	   MASTER_PORT=3306,
     ->     MASTER_PASSWORD='slavepass',
     ->     MASTER_LOG_FILE='mysql-bin.000003',
     ->     MASTER_LOG_POS=73;
 ```
 **3.**启动slave同步进程：
+
 ```sql
 start slave;
 ```

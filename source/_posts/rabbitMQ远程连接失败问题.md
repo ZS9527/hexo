@@ -6,6 +6,8 @@ tags: rabbitmq
 # rabbitMQ远程连接失败问题
 > 将数据部署到服务器，程序开在本地时出现的远程连接问题。
 
+<!--more-->
+
 ## 问题一
 将rabbitMQ部署在服务器后，同事想要从本地连接web网页查看一下队列情况，发现根本打不开网页。程序连接报错：**Login was refused using authentication mechanism PLAIN. For details see the broker logfile.**
 
