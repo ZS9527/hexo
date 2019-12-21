@@ -8,6 +8,8 @@ tags: mysql
 > 此次错误有多种，首先是我本机的**Got fatal error 1236 from master when reading data from binary log: 'Could not find first log file name in binary log index file'**。
 > 然后是服务器的**Incorrect key file for table '.\env_v2_air\gather_air_data_201911.MYI'; try to repair it**
 
+<!--more-->
+
 ## 本机错误
 ### 发生场景：
 本机的mysql一开始使用5.7版本作为主库，8.1版本作为从库。这次主从同步崩溃后，尝试使用复制data文件夹的方式已经不能够把表复制到从库，而且C盘的空间要不足了。我便尝试将主从库搬迁到剩余空间比较多的F盘。

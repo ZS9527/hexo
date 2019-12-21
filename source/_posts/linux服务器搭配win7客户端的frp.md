@@ -8,6 +8,8 @@ tags: frp
 > teamviewer安装是方便一些，但是频繁的提示商业用途和不停的掉线太影响使用了。
 > 我还是重新找了一个方法来远程电脑。
 
+<!--more-->
+
 ## 下载frp
 从[https://github.com/fatedier/frp/releases](https://github.com/fatedier/frp/releases) 下载最新版本的frp压缩包。因为是两种系统，所以把linux和windows的版本都下载了一份。
 
