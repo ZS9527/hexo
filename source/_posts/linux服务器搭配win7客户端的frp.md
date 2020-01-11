@@ -18,6 +18,7 @@ tags: frp
 ```
 [common]
 bind_port = 7000           #与客户端绑定的进行通信的端口
+privilege_token = xxxx
 ```
 保存后启动服务./frps -c ./frps.ini。
 ### 注意
@@ -69,6 +70,7 @@ type = tcp
 local_ip = 127.0.0.1
 local_port = 3389 远程桌面端口
 remote_port = 7001 访问时的端口
+auth_token = xxxx 与服务器对应的token
 ```
 保存后启动服务
 ```
