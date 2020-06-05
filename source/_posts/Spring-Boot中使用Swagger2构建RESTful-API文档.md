@@ -1,7 +1,7 @@
 ---
 title: Spring Boot中使用Swagger2构建 API文档
 date: 2019-03-21 19:43:21
-tags: spring boot， swagger
+tags: Spring boot
 ---
 
 # Spring Boot中使用Swagger2构建API文档

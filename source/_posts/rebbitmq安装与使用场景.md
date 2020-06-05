@@ -1,7 +1,7 @@
 ---
 title: rebbitmq安装与使用场景
 date: 2019-08-14 17:39:28
-tags: rebbitmq
+tags: RabbitMQ
 ---
 
 # RebbitMQ安装与使用场景

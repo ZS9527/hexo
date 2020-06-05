@@ -1,7 +1,7 @@
 ---
 title: '使用rabbitmq时出现的Channel shutdown: channel error;'
 date: 2019-10-26 16:15:48
-tags: rabbiteMQ
+tags: RabbitMQ
 ---
 
 # 使用rabbitmq时出现的Channel shutdown: channel error;

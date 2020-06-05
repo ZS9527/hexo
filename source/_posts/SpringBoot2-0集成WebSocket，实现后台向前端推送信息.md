@@ -1,10 +1,10 @@
 ---
-title: SpringBoot2.0集成WebSocket，实现后台向前端推送信息
+title: SpringBoot2.0集成WebSocket，实现推送信息
 date: 2019-04-02 21:10:03
 tags: webSocket
 ---
+# SpringBoot2.0集成WebSocket，实现推送信息
 
-# SpringBoot2.0集成WebSocket，实现后台向前端推送信息
 > 原博客为[https://blog.csdn.net/moshowgame/article/details/80275084](https://blog.csdn.net/moshowgame/article/details/80275084)。这里是根据原博客搭建成功之后的记录，以后使用时可以直接套用。
 
 <!--more-->

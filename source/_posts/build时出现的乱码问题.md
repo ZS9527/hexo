@@ -1,6 +1,6 @@
 ---
 title: gradle build时出现的乱码问题
-date: 2019-10-29 15:02:04
+date: 2019-11-9 15:02:04
 tags: bug
 ---
 # gradle build时出现的乱码问题

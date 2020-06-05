@@ -1,7 +1,7 @@
 ---
 title: jpa的一次自定义find方法的使用过程
 date: 2019-05-17 22:22:54
-tags: jpa sql
+tags: jpa
 ---
 
 # 一次jpa自定义查询方法的使用尝试过程

@@ -1,7 +1,7 @@
 ---
 title: RabbitMQ中的stomp初步部署
 date: 2019-10-19 16:47:45
-tags: rabbitmq
+tags: RabbitMQ
 ---
 
 # RabbitMQ中的stomp初步部署

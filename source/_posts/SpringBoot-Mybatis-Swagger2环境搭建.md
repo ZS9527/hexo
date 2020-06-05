@@ -1,7 +1,7 @@
 ---
 title: SpringBoot+Mybatis+Swagger2环境搭建
 date: 2019-11-23 17:37:02
-tags: spring
+tags: Spring boot
 ---
 
 # SpringBoot+Mybatis+Swagger2环境搭建
