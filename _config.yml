@@ -47,7 +47,7 @@ highlight:
   auto_detect: false
   tab_replace:
   
-# hexo-helper-live2d çœ‹æ¿å¨˜
+# hexo-helper-live2d ¿´°åÄï
 live2d:
   model:
     use: live2d-widget-model-koharu
