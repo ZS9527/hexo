@@ -126,7 +126,7 @@ docker pull rabbitmq:3.7.17-management
 ```
 启动容器
 ```
-docker run -d --hostname my-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3.7.17-management
+docker run -d --hostname my-rabbit -p 5672:5672 -p 15672:15672 -p 15674:15674 -p 61613:61613 rabbitmq:3.7.17-management
 ```
 浏览器访问docker ip ： 15672可以进入管理界面
 
