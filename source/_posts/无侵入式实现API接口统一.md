@@ -7,6 +7,8 @@ tags: Spring boot
 # Spring Boot 无侵入式 实现 API 接口统一 JSON 格式返回
 > 转载自 [blog.csdn.net/qq_34347620/article/details/102239179](blog.csdn.net/qq_34347620/article/details/102239179) 
 > 现在自从增加了每天的通勤路程，感觉每天时间都很紧张。这个文章并没有实际操作一下。
+> 
+<!--more-->
 
 ## 简介
 - 无侵入式 统一返回JSON格式

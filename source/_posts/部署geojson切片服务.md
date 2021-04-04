@@ -7,6 +7,8 @@ tags: Geojson
 # 部署geojson文件矢量切片服务
 > 客户答应的 Linux 虚拟机到了，终于可以直接部署 tippecanoe 了。
 > 原本的 Geojson 文件太大了，还是需要切片。
+> 
+<!--more-->
 
 ## 安装 tippecanoe
 登录 Linux 服务器
@@ -29,6 +31,15 @@ make install
 直接部署在了原本的 win 服务器上，通过 FTP 读取 tippecanoe 做好的矢量地图文件。
 
 通过[https://jingsam.github.io/foxgis-server-lite/#/deploy](https://jingsam.github.io/foxgis-server-lite/#/deploy) 下载 win 包，直接启动 exe 文件即可。
+
+### 02-23更新
+如果出现了环境问题，可以使用线上代码解决
+```
+git clone https://gitee.com/jingsam/foxgis-server-lite.git map-server
+cd map-server
+yarn install
+npm start
+```
 
 ## 部署调用命令 jar 包
 这个程序是负责调用 Linux 中的切片程序，只需要放在 Linux 任意文件夹中开启来就完事了。只是一个开发接口调用命令而已。

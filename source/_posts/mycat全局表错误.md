@@ -5,6 +5,8 @@ tags: mycat
 ---
 # mycat全局表错误
 > 具体报错内容为：can't find table define in schema DIC_HIDDEN_DANGER_ADM schema:risk
+> 
+<!--more-->
 
 ## 缘由
 部署时新加入了字典表，在mycat连接的两个库里都写入了一次。但是在查询时，和第一个库的普通表 join 时可以查询。和在另一个库的分表后的表 join 时会显示无法查询出字典表。

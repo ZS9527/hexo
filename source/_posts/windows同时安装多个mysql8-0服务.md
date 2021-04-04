@@ -11,12 +11,12 @@ tags: sql
 <!--more-->
 
 ## 官网下载 mysql文件。官网下载链接：[https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/downloads/mysql/)
-![](b1.png)
+![1](b1.png)
 　　1. 选择mysql下载的系统版本。
 　　2. 此处可以下载MSI安装包，图简单的朋友可以下载，然后“下一步”安装即可。
 　　3. 此处下载ZIP压缩包版（这次记录ZIP压缩包安装方法）
 ## 解压下载好的ZIP文件，到自己喜欢的位置。
-![](b2.png)
+![2](b2.png)
 　　1. 因为我这次要安装多个mysql服务，为mysql的主从复制做准备，所以我的文件结构如上。
 　　2. 官网下载的ZIP压缩包。
 　　3. 解压3次副本。
@@ -71,9 +71,9 @@ table_open_cache = 256
 ```
 
 处理完目录结构如下。
-![](b3.png)
+![3](b3.png)
 ## 管理员身份运行cmd,并将切换到你解压过后的文件的bin目录下。
-![](b4.png)
+![4](b4.png)
 ## 初始化mysql
 ```    
     mysqld --defaults-file=D:\mysql\mysql3\mysql-8.0.11-winx64\my.ini --initialize --console
@@ -85,14 +85,14 @@ table_open_cache = 256
     mysqld install MySQL3 --defaults-file="D:\mysql\mysql3\mysql-8.0.11-winx64\my.ini"
 
 ```
-![](b5.png)
+![5](b5.png)
 ## 启动mysql服务。 
 ```
     net start MySQL3
 ```
 这里的服务名字和上面的命令中起的服务名一致
 
-![](b6.png)
+![6](b6.png)
 
 ### 删除服务
 ```
@@ -103,19 +103,19 @@ sc delete MySQL3（服务名称）
 ```
     mysql -u root -p --protocol=tcp --host=localhost --port=3308（选择端口）
 ```
-![](b7.png)
+![7](b7.png)
 此处就需要上面初始化mysql时候系统生成的密码了。
-![](b8.png)
+![8](b8.png)
 ## 修改root密码。
 ```
     ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'newpassword';
 ```
-![](b9.png)
+![9](b9.png)
 ## 密码修改后刷新权限，就可以使用mysql了。
 ```
     flush privileges;
 ```
-![](b10.png)
+![10](b10.png)
 
 **这个方法可以在一台电脑上安装N个mysql服务，注意修改不同的端口号即可。**
 

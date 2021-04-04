@@ -7,6 +7,8 @@ tags: bug
 # idea启动命令过长bug
 > 在引用 MeteoInfoLib jar 包后带来的问题，报错内容为：
 > Error running 'Application': Command line is too long. Shorten command line for Application or also for Spring Boot default configuration.
+> 
+<!--more-->
 
 ## 解决方案
 调整运行项目的配置，将 Configuration 中的 Shorten Command Line 修改为 JAR 就可以了。
