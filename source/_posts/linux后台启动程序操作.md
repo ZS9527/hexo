@@ -45,6 +45,10 @@ nohup /root/runoob.sh > runoob.log 2>&1 &
 ```
 nohup java -jar v.jar > v.log 2>&1 &
 ```
+**查看后台进程**
+```
+ps -aux|grep java
+```
 ## 找到占用的端口
 来自[https://www.cnblogs.com/zjfjava/p/10513399.html](https://www.cnblogs.com/zjfjava/p/10513399.html)
 用于查看指定端口号的进程情况
